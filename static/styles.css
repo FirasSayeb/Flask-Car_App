@@ -1,0 +1,151 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Featured cars section styles */
+  .featured-cars {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .featured-cars h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .car-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Selling points section styles */
+  .selling-points {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .selling-point {
+    text-align: center;
+  }
+  
+  .selling-point h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-content {
+      padding: 0 2rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  

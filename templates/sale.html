@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars for Sale - Your Car Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <!-- ... your navigation ... -->
+        <nav>
+            <nav>
+                <div class="logo">Your Car Shop</div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>    
+                    <li><a href="/sale">Cars for Sale</a></li>
+                    <li><a href="ad">Sell Your Car</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+        </nav> 
+    </header>
+
+    <section class="car-listing">
+        <h2>Cars for Sale</h2>
+        <div class="car-list">
+            {% for car in cars_for_sale %}
+            <div class="car-card">
+                <h3>{{ car[0] }}</h3>
+                <p>Price: ${{ car[1] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <!-- ... your footer ... -->
+    </footer>
+</body>
+</html>
